@@ -10,6 +10,10 @@ class Recharge extends StatefulWidget {
 class _RechargeState extends State<Recharge> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(title: Text('Recharge'),),
+      backgroundColor: Colors.red
+
+    );
   }
 }

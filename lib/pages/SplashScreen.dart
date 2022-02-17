@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:airtelapp/Saverces/NavigatorPageRoute.dart';
-import 'package:airtelapp/pages/HomePage.dart';
+import 'package:airtelapp/pages/NavBottom.dart';
 import 'package:flutter/material.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(Duration(seconds: 5),
-            ()=> NavigatorPageRoute(context,HomePage()));
+            ()=> NavigatorPageRoute(context,NavBottom()));
   }
 
   @override
