@@ -3,7 +3,7 @@ import 'package:airtelapp/pages/Balance/Balance.dart';
 import 'package:airtelapp/pages/BuyInternet.dart';
 import 'package:airtelapp/pages/BuySms.dart';
 import 'package:airtelapp/pages/BuyVoice.dart';
-import 'package:airtelapp/pages/Internet.dart';
+import 'package:airtelapp/pages/Internet/Internet.dart';
 import 'package:airtelapp/pages/Lon.dart';
 import 'package:airtelapp/pages/Balance/AccountDashBoard/Recharge.dart';
 import 'package:airtelapp/pages/Sms.dart';
