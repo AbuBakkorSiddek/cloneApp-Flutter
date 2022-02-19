@@ -1,21 +1,20 @@
-import 'package:airtelapp/Saverces/NavigatorPageRoute.dart';
-import 'package:airtelapp/pages/Balance/AccountDashBoard/YoloPop.dart';
 import 'package:airtelapp/widget/Balance/QuickCardLinks.dart';
 import 'package:flutter/material.dart';
 
-class Internet extends StatefulWidget {
-  const Internet({Key? key}) : super(key: key);
+class Voice extends StatefulWidget {
+  const Voice({Key? key}) : super(key: key);
 
   @override
-  _InternetState createState() => _InternetState();
+  _VoiceState createState() => _VoiceState();
 }
 
-class _InternetState extends State<Internet> {
+class _VoiceState extends State<Voice> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return   Scaffold(
+
       appBar: AppBar(
-        title: Text('Internet Dashboard'),
+        title: Text('Voice Dashboard'),
       ),
       backgroundColor: Colors.red,
       body: Container(
@@ -69,7 +68,7 @@ class _InternetState extends State<Internet> {
                                           CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'My Internet',
+                                              'My Voice',
                                               style: TextStyle(
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.bold),
@@ -86,23 +85,12 @@ class _InternetState extends State<Internet> {
                                               height: 15,
                                             ),
                                             Text(
-                                              '1024.00 MB',
+                                              '1000 Min',
                                               style: TextStyle(
                                                   fontSize: 25,
                                                   fontWeight: FontWeight.bold),
                                             ),
-                                            SizedBox(
-                                              height: 10,
-                                            ),
-                                            Text(
-                                              'of  2524.00 MB',
-                                              style: TextStyle(
-                                                  fontSize: 15,
-                                                  fontWeight: FontWeight.bold),
-                                            ),
-                                            SizedBox(
-                                              height: 10,
-                                            ),
+
                                           ],
                                         ),
                                       ),
@@ -144,7 +132,7 @@ class _InternetState extends State<Internet> {
 
                                           },
                                           child: Text(
-                                            'Buy Internet Packs',
+                                            'Buy Voice Packs',
                                             style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
                                           )),
                                     )),
@@ -179,20 +167,23 @@ class _InternetState extends State<Internet> {
                   color: Colors.white,
                   child: Container(
                     width: 80,
-                    height: 160,
+                    height: 230,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(25.0))),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
+
+
                         InkWell(
                           onTap: () {},
                           child: QuickCard(
-                            title: 'Usage History',
+                            title: 'Recharge History',
                             iconData: Icons.arrow_forward_ios,
                           ),
                         ),
+
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Divider(
@@ -200,15 +191,37 @@ class _InternetState extends State<Internet> {
                             color: Colors.grey,
                           ),
                         ),
+
+
+
                         InkWell(
-                          onTap: () {
-                            NavigatorPageRoute(context, YoloPop());
-                          },
+                          onTap: () {},
                           child: QuickCard(
-                            title: 'YOLO POP',
+                            title: 'Usage History',
                             iconData: Icons.arrow_forward_ios,
                           ),
                         ),
+
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Divider(
+                            height: 5,
+                            color: Colors.grey,
+                          ),
+                        ),
+
+
+                        InkWell(
+                          onTap: () {
+                          },
+                          child: QuickCard(
+                            title: 'Manager Fnf',
+                            iconData: Icons.arrow_forward_ios,
+                          ),
+                        ),
+
+
+
 
                       ],
                     ),
@@ -238,7 +251,7 @@ class _InternetState extends State<Internet> {
               Padding(
                 padding: const EdgeInsets.only(top: 10, left: 20),
                 child: Text(
-                  'Offers',
+                  'Voice Offers',
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -259,7 +272,7 @@ class _InternetState extends State<Internet> {
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.start,
                                         children: [
-                                          Text('Supper Offer 12 GB',
+                                          Text('Supper Offer 100 min',
                                               style: TextStyle(
                                                   fontSize: 20,
                                                   fontWeight: FontWeight.bold)),
@@ -410,6 +423,7 @@ class _InternetState extends State<Internet> {
           ),
         ),
       ),
+
     );
   }
 }
