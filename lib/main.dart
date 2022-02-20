@@ -1,4 +1,6 @@
+import 'package:airtelapp/pages/Balance/AccountDashBoard/YoloPop.dart';
 import 'package:airtelapp/pages/SplashScreen.dart';
+import 'package:airtelapp/pages/dawer/CustomerService.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
       primarySwatch: Colors.red,
       ),
-      home: SplashScreen(),
+      home: YoloPop(),
     );
   }
 }
