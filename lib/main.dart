@@ -1,6 +1,5 @@
-import 'package:airtelapp/pages/Balance/AccountDashBoard/YoloPop.dart';
-import 'package:airtelapp/pages/SplashScreen.dart';
-import 'package:airtelapp/pages/dawer/CustomerService.dart';
+import 'package:airtelapp/pages/BottomNav/HomePage.dart';
+import 'package:airtelapp/pages/dawer/UtilityBill.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
       primarySwatch: Colors.red,
       ),
-      home: YoloPop(),
+      home: UtilityBill(),
     );
   }
 }

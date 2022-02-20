@@ -11,6 +11,7 @@ import 'package:airtelapp/pages/Voice/Voice.dart';
 import 'package:airtelapp/pages/myProfile.dart';
 import 'package:airtelapp/widget/Homepage/ReusedContainer.dart';
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -21,6 +22,42 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
+
+  final List<String> images=[
+
+
+    'images/download1.png',
+    'images/download2.png',
+    'images/download3.png',
+    'images/download4.png',
+    'images/download5.png',
+    'images/download6.png',
+    'images/download7.png',
+    'images/download8.png',
+    'images/download9.png',
+    'images/download10.png',
+    'images/download11.png',
+    'images/download12.png',
+    'images/download13.png',
+    'images/download14.png',
+    'images/download15.png',
+    'images/download16.png',
+    'images/download17.png',
+    'images/download18.png',
+    'images/download19.png',
+    'images/download20.png',
+    'images/download21.png',
+
+
+  ];
+
+  List<Widget> grenarate(){
+    return images.map((e) =>ClipRRect(
+      child: Image.asset(e,fit: BoxFit.cover,),
+      borderRadius: BorderRadius.circular(12.0),
+    ) ).toList();
+
+  }
 
 
   @override
@@ -540,6 +577,35 @@ class _HomePageState extends State<HomePage> {
                        Container(
                          width: 150,
                          height: 250,
+                         margin: EdgeInsets.all(20.0),
+                         decoration: BoxDecoration(
+                             color: Colors.red
+                         ),
+
+                       ),
+
+
+                       SizedBox(
+                         height: 05,
+                       ),
+
+
+                       Padding(
+                         padding: const EdgeInsets.only(left: 18.0),
+                         child: Text('Suggested',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30),),
+                       ),
+
+
+                       SizedBox(
+                         height: 05,
+                       ),
+
+
+
+                       Container(
+                         width: MediaQuery.of(context).size.height*0.8,
+                         height: 250,
+                         margin: EdgeInsets.all(20.0),
                          decoration: BoxDecoration(
                              color: Colors.red
                          ),
@@ -549,14 +615,35 @@ class _HomePageState extends State<HomePage> {
 
 
                        Padding(
-                         padding: const EdgeInsets.only(left: 18.0),
-                         child: Text('Suggested',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30),),
+                         padding: const EdgeInsets.only(left: 20,),
+                         child: Text("What's new",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                       ),
+
+                       SizedBox(
+                         height: 05,
                        ),
 
 
+                       Container(
+                             child: CarouselSlider(
+
+                               items: grenarate(),
+                               options: CarouselOptions(
+                                 enlargeCenterPage: true,
+                                  aspectRatio: 18/8
+
+                               ),
+
+
+                             ),
+                           ),
 
 
 
+
+                       SizedBox(
+                         height: 25,
+                       ),
 
 
 
